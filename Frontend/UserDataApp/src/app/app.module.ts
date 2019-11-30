@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './user.service';
 
 @NgModule({
@@ -19,8 +19,7 @@ import { UserService } from './user.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,    
-    HttpClient
+    FormsModule,   
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
